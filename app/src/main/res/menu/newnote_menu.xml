@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_inclined_pin_off"
+        app:showAsAction="ifRoom"
+        android:title="About"/>
+    <item
+        android:id="@+id/palette"
+        android:icon="@drawable/ic_palette"
+        app:showAsAction="withText|always"
+
+        android:title="About"/>
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/ic_done_black"
+        app:showAsAction="withText|always"
+        android:titleCondensed="DONE"
+        android:title="About"/>
+
+
+</menu>

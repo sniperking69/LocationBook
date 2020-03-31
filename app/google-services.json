@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "756031589252",
+    "firebase_url": "https://locationbook-6db2e.firebaseio.com",
+    "project_id": "locationbook-6db2e",
+    "storage_bucket": "locationbook-6db2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756031589252:android:1e7bbe89103af92b6f2bd1",
+        "android_client_info": {
+          "package_name": "com.aputech.locationbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756031589252-gmbih59ha6j67k46i031d7st288n5n1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aputech.locationbook",
+            "certificate_hash": "cb8d3004b966e82aa278d1991b4a2fdbdf08034b"
+          }
+        },
+        {
+          "client_id": "756031589252-3kpjp9l6ncvc1q8di1dbfhmsdhdhlbrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTnZU_tHdjJ_hMLJpg02b7hOpt573ntY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756031589252-3kpjp9l6ncvc1q8di1dbfhmsdhdhlbrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:allowDividerAbove="false"
+    app:allowDividerBelow="false">
+
+    <PreferenceCategory
+       android:title="@string/notifications"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false">
+        <SwitchPreferenceCompat
+            app:key="@string/notifications"
+            app:title="@string/notifications"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/theme"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false">
+
+        <SwitchPreferenceCompat
+            app:key="@string/theme"
+            app:summary=""
+            app:title="@string/theme" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/logout"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        >
+        <Preference
+            app:key="@string/logout"
+            app:title="@string/logout"
+            app:summary="Logout"
+
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false">
+        <Preference
+            app:key="@string/about"
+            app:title="@string/about"
+            app:summary="@string/version"
+        />
+    </PreferenceCategory>
+
+</PreferenceScreen>

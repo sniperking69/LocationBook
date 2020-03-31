@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewNote">
+
+    <!-- include main content -->
+    <include layout="@layout/new_note_content"
+       android:id="@+id/editlayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_search"
+        android:focusable="true" />
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="bottom"
+        android:weightSum="10">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:text="right"
+                            android:layout_alignParentStart="true"
+                            android:textColor="@android:color/white" />
+                        <ImageView
+                            android:id="@+id/image_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:rotation="45"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_search"
+                            android:layout_alignParentEnd="true"
+                            android:focusable="true" />
+
+                    </RelativeLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/action_menu"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="8.5">
+                        <TableRow>
+                            <LinearLayout
+                                android:id="@+id/btn2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:layout_column="1">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:src="@drawable/ic_camera"
+                                    android:layout_weight="7"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:text="Camera"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:layout_column="2">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:src="@drawable/ic_gallery"
+                                    android:layout_weight="7"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:text="Gallery"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:layout_column="3">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:src="@drawable/ic_gallery"
+                                    android:layout_weight="7"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:text="Gallery"/>
+                            </LinearLayout>
+
+                        </TableRow>
+                        <TableRow
+                           >
+                            <LinearLayout
+                                android:id="@+id/bthjn2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:layout_column="1">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:src="@drawable/ic_camera"
+                                    android:layout_weight="7"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:text="Camera"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:layout_column="1">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:src="@drawable/ic_gallery"
+                                    android:layout_weight="7"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:text="Gallery"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/bthjn4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:layout_column="1">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:src="@drawable/ic_gallery"
+                                    android:layout_weight="7"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:text="Gallery"/>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</RelativeLayout>
